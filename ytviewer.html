@@ -1,0 +1,42 @@
+<header>Ad-Free video viewer for school</header>
+<p>Does your school have a web filter that doesn't let you watch youtube? Then this is for you!</p>
+<button onclick="swap()">New video</button>
+<p>How to use:</p>
+<p>1.) Look up your favorite youtube video</p>
+<p>2.) Right below it you should see a link. at the very end of the link, there should be a bunch of random numbers and letters. copy the string right after "v="</p>
+<p>3.) Click "new video", paste in the text, and enjoy!</p>
+
+<iframe width="560" height="315" src="https://www.youtubeeducation.com/embed/-SZcHYgv5Yg" frameborder="0" allowfullscreen="true" id="vid"></iframe><br>
+<small>This version of YouTube Unblocker was edited to fit the theme of the website.</small>
+<style>
+body {
+text-align: center;
+font-family: Calibri;
+
+
+}
+header {
+  color: white;
+  background: black;
+  font-size: 35px;
+}
+button {
+  background: black;
+  color: white;
+  border: 3px solid black;
+  font-size: 25px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+button:hover {
+  background: white;
+  color: black;
+}
+</style>
+<script>
+function swap() {
+ var id = prompt("Please enter video id:")
+ document.getElementById("vid").src = "https://www.youtubeeducation.com/embed/" + id
+}
+</script>
+
